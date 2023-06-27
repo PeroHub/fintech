@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.okayna {
+    text-decoration: none !important;
+}
+
+.home {
+    text-decoration: none;
+}
+
+.sidebar {
+    min-width: 194px;
+    height: 100vh;
+    position: absolute;
+    border-right: 2px solid;
+    border-right-color: rgb(187, 186, 186);
+    /* position: relative; */
+    
+}
+
+.center-box {
+    border: 2px solid;
+    border-color: rgb(207, 207, 207);
+}
+
+.effect:hover {
+    font-weight: bolder;
+}
+
+
+/* .one {
+  color: #F5DE06 !important; 
+  text-decoration: none;
+} */
+
+
+/* .sidebar:hover {
+  color: #F5DE06 !important;  
+}  */
+
+
+/* .down {
+    border-bottom: 2px solid;
+    border-bottom-color: #F5DE06;
+} */
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (max-width: 767px) {
+    .sidebar {
+        display: none;
+    }
+    .mobile-yes .menu-icon {
+        text-decoration: none;
+    }
+    .mobile-no {
+        display: none;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .mobile-yes {
+        display: none;
+    }
+}

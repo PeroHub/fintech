@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+/* Maintransaction component design */
+
+body {
+    overflow-x: hidden;
+    font-family: 'Quicksand', sans-serif;
+}
+.paid{
+    background: #84E296;
+    border-radius: 24px;
+    width: 88px;
+    text-align: center;
+    color: black;
+    margin: 1.2rem;
+}
+.successful{
+    background: #84E296;
+    border-radius: 24px;
+    width: 88px;
+    text-align: center;
+    color: black;
+    margin: 1.2rem;
+}
+.pending{
+    background: #F4D167;
+    border-radius: 24px;
+    width: 88px;
+    text-align: center;
+    color: black;
+    margin: 1.2rem;
+}
+.canceled{
+    background: #F08989;
+    border-radius: 24px;
+    width: 88px;
+    text-align: center;
+    color: black;
+    margin: 1.2rem;
+    
+}
+.maincon {
+    margin: 0;
+    padding: 0;
+    background: #E5E5E5;
+    width: 100vw;
+    height: 100vh;
+}
+
+.transaction {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* justify-content: space-around; */
+    padding: 15px 10px;
+}
+
+.transaction .profile-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: .8em;
+    width: 50%;
+    font-weight: normal;
+}
+
+.profile-me img {
+    width: 50px;
+    height: 50px;
+}
+
+.transaction .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 70%;
+}
+
+.transaction .heading h2 {
+    color: #000000;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.transaction .input-setting {
+    position: relative;
+    right: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.transaction .input-setting input {
+    background: #DBDBDB;
+    border-radius: 5px;
+    padding: 3px 10px;
+    width: 60%;
+}
+
+.transaction .input-setting img {
+    margin: 0px 10px;
+    height: 25px;
+}
+
+
+/* Maintransaction component design */
+
+
+/* Aside dashboard design */
+
+.aside {
+    width: 15%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background: #0C0C0C;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside .dashboard,
+.transaction-dash,
+.customer,
+.analysis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #818181;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+.aside .settings {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+.aside .dashboard p,
+.transaction-dash p,
+.customer p,
+.analysis p,
+.settings p {
+    color: #818181;
+}
+
+
+/* Aside dashboard design */
+
+
+/* Status Section */
+
+.split {
+    display: flex
+}
+
+
+/* Status Section || Transaction Board */
+
+.transaction__board {
+    background: #FFFFFF;
+    width: 65%;
+    height: 77vh;
+    position: relative;
+    left: 5%;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.transaction__header,
+.transaction__content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.transaction__header div,
+.transaction__content div {
+    display: flex;
+    justify-content: center;
+    width: 13.5em;
+}
+
+.transaction__content--amount {
+    padding-left: 4.125em;
+}
+
+.transaction__content--time {
+    padding-left: 1.215em;
+}
+
+
+/* .transaction__content--status {
+    border: solid red;
+} */
+
+select {
+    border: .1em solid #9F9F9F;
+    appearance: none;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.pending {
+    color: #ff0000;
+}
+
+.successful {
+    color: #8789f0;
+}
+
+.paid {
+    color: #008000;
+}
+
+.transaction__content div {
+    justify-content: flex-start;
+}
+
+.transaction__header {
+    margin: .5em auto;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #9F9F9F;
+}
+
+.transaction__content {
+    margin: .63em auto;
+    padding-bottom: .1em;
+    border-bottom: 1px solid #9F9F9F;
+}
+
+.transaction__content button {
+    border: none;
+    border-radius: 4px;
+}
+
+.paginate__buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+
+.prev__button,
+.next__button {
+    background-color: black;
+    color: yellow;
+    border-radius: .25em;
+}
+
+.deactivate__button {
+    background-color: darkgrey;
+    color: black;
+    border-radius: .25em;
+}
+
+/* button:active {
+    box-shadow: 0 5px 8px #888888;
+    transform: translateY(2px);
+} */
+
+
+/* Status Section || Transaction Board */
+
+
+/* Pages */
+
+.unedited {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    position: relative;
+    left: 5%;
+    width: 65%;
+}
+
+/* a:hover,
+a:active,
+a.active {
+    
+    filter: grayscale(100%) brightness(120%) sepia(90%) hue-rotate(5deg) saturate(500%) contrast(0.7);          
+    
+} */
+
+
+/* Admin Dashboard */
+
+.admin__dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1em;
+    position: relative;
+    left: 5%;
+    width: 66.3%;
+    /* border: solid red; */
+}
+
+.inflow__box {
+    /* border: solid green; */
+    height: 40%;
+}
+
+.inflow__details {
+    /* border: solid blue; */
+    display: flex;
+    justify-content: space-between;
+    height: 85%;
+}
+
+.inflow__details--dollar,
+.inflow__details--naira {
+    /* border: solid blue; */
+    background-color: #FCFCFC;
+    box-shadow: 0px 4px 26px rgba(100, 100, 100, 0.15);
+    border-radius: 24px 17px 13px 1px;
+    border-bottom: 13px solid #FF8228;
+}
+
+.exchange__box {
+    /* border: solid rgb(97, 97, 124); */
+    width: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header {
+    color: #FF8228;
+    font-weight: 600;
+}
+
+.currency__sign {
+    background-color: black;
+    width: 3vw;
+    height: 7.5vh;
+    border-radius: 12px;
+}
+
+.currency__amount {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.naira__equivalent img {
+    width: 1em;
+    margin-right: .2em;
+}
+
+.naira__equivalent span {
+    font-weight: 600;
+}
+
+.signal,
+.signal__right {
+    width: 8.3vw;
+    height: 11vh;
+}
+
+.signal__right {
+    /* border: solid green; */
+    transform: rotate(60deg);
+}
+
+.analysis__box {
+    /* border: solid brown; */
+    height: 58%;
+}
+
+.analysis__details {
+    display: flex;
+    justify-content: space-between;
+    /* border: solid red; */
+    height: 90%;
+    /* height: 250px; */
+}
+
+.analysis__details--chart {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    margin-right: 1.5em;
+    background-color: #FFFFFF;
+    border-radius: 27px;
+}
+
+.analysis__details--pending {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0px 4px 22px rgba(128, 56, 56, 0.16);
+    /* border: solid green; */
+}
+
+.pending__header {
+    /* border: solid black; */
+    display: flex;
+    /* width: 100%; */
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: .7em;
+    /* border: solid red; */
+}
+
+.pending__header div {
+    /* border: solid green; */
+    font-weight: 600;
+    /* border: solid green; */
+}
+
+.pending__header img {
+    /* border: solid blue; */
+    width: 3vh;
+}
+
+.pending__header img:nth-last-child(1) {
+    /* border: solid black; */
+    width: 1vh;
+    transform: translate(-1.5px, -5px);
+}
+
+.pending__data {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: solid red; */
+    font-size: .8125em;
+    color: #505050;
+    background: #F8F7F7;
+    height: 6.5vh;
+    border-bottom: 1px solid #9F9F9F;
+}

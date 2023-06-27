@@ -1,0 +1,56 @@
+.main {
+    width: 75%;
+    height: 100vh;
+    background-color: #fff;
+    position: absolute;
+    top: -2px;
+    display: none;
+}
+
+
+.bar {
+    display: none;
+}
+
+.toggle {
+    height: 50vh;
+    margin-top: 30px;
+    padding: 30px;
+}
+
+.toggle p {
+    font-size: 1.7em;
+}
+
+.toggle p sup {
+    font-size: 2em;
+    position: relative;
+    top: -10px;
+}
+
+.toggle .mobile-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.toggle .mobile-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    .bar {
+        display: initial;
+    }
+
+    .main {
+        display: initial;
+    }
+}

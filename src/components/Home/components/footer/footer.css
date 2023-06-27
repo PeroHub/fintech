@@ -1,0 +1,70 @@
+.footer-logo {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: "#FF842B" !important;
+    line-height: 25px;
+    margin-right: 20px;
+    display: flex;
+  }
+  
+  .footer-logo div {
+    font-size: 1rem;
+    background: "#FF842B";
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    
+  }
+
+  .footer-section {
+      margin-top: 30px;
+      padding: 10px;
+  }
+
+  .all-contact {
+      margin-top: 20px;
+  }
+
+.email h4, .Address h4, .Contact h4 {
+    color: rgb(148, 143, 143);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.email p, .Address p, .Contact p {
+    color: rgb(148, 143, 143);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.social-icons img {
+    width: 16px;
+    height: 16px;
+    margin: 0 10px;
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 700px) {
+    .footer-section {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .all-contact {
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+    }
+
+    .footer-logo {
+        text-transform: uppercase;
+        margin-left: 150px;
+    }
+
+    .footer-logo div {
+        margin-left: 5px;
+    }
+}
